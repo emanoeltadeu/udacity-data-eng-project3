@@ -27,3 +27,8 @@ Below are steps you can follow to complete each component of this project.
 2. Implement the logic in **etl.py** to load data from staging tables to analytics tables on Redshift.
 3. Test by running **etl.py** after running **create_tables.py** and running the analytic queries on your Redshift database to compare your results with the expected results.
 4. Delete your redshift cluster when finished.
+
+## To run the project:
+   * Update the `dwh.cfg` file with you Amazon credentials.
+   * Run `create_tables.py`. This will create the database and the required tables.
+   * Run `etl.py`. This will start pipeline which will read the data from files and populate the tables.
